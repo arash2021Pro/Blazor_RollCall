@@ -1,0 +1,37 @@
+﻿@page "/ValidateClient"
+@inherits LicensePermssion.Components.ClientComponent
+@using LicensePermssion.Models
+<div class="container my-4">
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <RadzenTemplateForm TItem="ValidateClientModel" Data="_validateClientModel"  Submit="@HandleValidateClientAsync"  >
+                <RadzenFieldset Text="License Informations">
+                    <p>
+                        <RadzenTextBox Name="AppSerial" Placeholder="AppSerial ..." @bind-Value="@_validateClientModel.AppSerial"  Style="display:block;text-align: center"  > </RadzenTextBox>
+                        <RadzenRequiredValidator Component="AppSerial" Text="AppSerial is required!" Style="position:absolute" Popup="true" />
+                    </p>
+                    <p>
+                       
+                        <RadzenTextBox Name="SystemSerial" Placeholder="SystemSerial ..." @bind-Value="@_validateClientModel.SystemSerial" Style="display:block;text-align: center" > </RadzenTextBox>
+                        <RadzenRequiredValidator Component="SystemSerial" Text="SystemSerial is required"  Style="position:absolute" Popup="true"  />
+                    </p>
+
+                    <div class="col-lg-3 offset-md-5">
+                        <RadzenButton ButtonType="ButtonType.Submit" Text="Validate" ButtonStyle="ButtonStyle.Primary"/>
+                    </div>
+                </RadzenFieldset>
+            </RadzenTemplateForm>
+        </div>
+    </div>
+</div>
+@code
+{
+    private ValidateClientModel _validateClientModel = new ();
+
+    private async Task HandleValidateClientAsync()
+    {
+        await ValidateClientAsync(_validateClientModel);
+    }
+}

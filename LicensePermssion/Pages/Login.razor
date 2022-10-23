@@ -1,0 +1,41 @@
+﻿@page "/Login"
+@using LicensePermssion.Models
+@inherits LicensePermssion.Components.LoginComponent
+
+<div class="container my-4">
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <RadzenTemplateForm TItem="LoginModel" Data="LoginModel"  Submit="@HandleLoginAsync"  >
+                <RadzenFieldset Text="Personal Informations">
+                    <p>
+                        
+                        <RadzenTextBox Name="UserName" Placeholder="UserName ..." @bind-Value="LoginModel.UserName" Style="display:block;text-align: center"  > </RadzenTextBox>
+                        <RadzenRequiredValidator Component="UserName" Text="UserName is required!" Style="position:absolute" Popup="true" />
+                    </p>
+                    <p>
+                       
+                        <RadzenTextBox Name="Password" Placeholder="Password ..." @bind-Value="LoginModel.Password" Style="display:block;text-align: center" > </RadzenTextBox>
+                 
+                        <RadzenRequiredValidator Component="Password" Text="Password is required"  Style="position:absolute" Popup="true"  />
+                    </p>
+
+                    <div class="col-lg-3 offset-md-5">
+                        <RadzenButton ButtonType="ButtonType.Submit" Text="Login" ButtonStyle="ButtonStyle.Primary"/>
+                    </div>
+                    
+                </RadzenFieldset>
+            </RadzenTemplateForm>
+        </div>
+    </div>
+</div>
+
+@code {
+    private LoginModel LoginModel = new ();
+
+    private async Task HandleLoginAsync()
+    {
+        await LoginAsync(LoginModel);
+    }
+}

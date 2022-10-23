@@ -1,0 +1,76 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LicensePermssion
+build_property.RootNamespace = LicensePermssion
+build_property.ProjectDir = C:\Users\admin\RiderProjects\Permission\LicensePermssion\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\admin\RiderProjects\Permission\LicensePermssion
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Pages/CreateLicense.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlTGljZW5zZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Pages/ValidateClient.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmFsaWRhdGVDbGllbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Pages/ValidatePhone.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmFsaWRhdGVQaG9uZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Shared/Timer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRpbWVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-tt8455o7qc
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-2t0w4heldt
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/RiderProjects/Permission/LicensePermssion/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

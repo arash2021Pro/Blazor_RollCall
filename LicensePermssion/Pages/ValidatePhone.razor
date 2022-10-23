@@ -1,0 +1,49 @@
+﻿
+@page "/ValidatePhone"
+@using LicensePermssion.Models
+@inherits LicensePermssion.Components.ValidatePhoneComponent
+
+<div class="container my-4">
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            
+            <div class="col-lg-3 offset-md-5">
+                <div class="col-lg-2 " style="margin-left: 17px">
+                    <RadzenBadge BadgeStyle="BadgeStyle.Success">
+                        <Timer/>
+                    </RadzenBadge>
+                </div>
+            </div>
+            <RadzenTemplateForm TItem="VerificationModel" Data="VerificationModel" Submit="@HandleVerification">
+                <div class="col-lg-3 offset-md-5">
+                    <div class="col-lg-2 " style="margin-left: 4px">
+                        <RadzenBadge BadgeStyle="BadgeStyle.Warning">
+                            @PhoneNumber
+                        </RadzenBadge>
+                    </div>
+                </div>
+                <RadzenFieldset Text="Verification Code">
+                    <p>
+               
+                        <RadzenTextBox Name="Code" Placeholder="Type your code . . . " @bind-Value="VerificationModel.Code" Style="display:block;text-align: center"> </RadzenTextBox>
+                        <RadzenRequiredValidator Component="Code" Text="Code is required!" Style="position:absolute" Popup="true"/>
+                    </p>
+                    <div class="col-lg-3 offset-md-5">
+                        <RadzenButton ButtonType="ButtonType.Submit" Text="Verify" ButtonStyle="ButtonStyle.Primary"/>
+                    </div>
+                </RadzenFieldset>
+            </RadzenTemplateForm>
+        </div>
+    </div>
+</div>
+
+@code
+{
+    private VerificationModel VerificationModel = new ();
+    private async Task HandleVerification()
+    {
+        await ValidatePhoneAsync(VerificationModel);
+    }
+}

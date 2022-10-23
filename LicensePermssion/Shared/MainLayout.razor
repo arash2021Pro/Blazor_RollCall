@@ -1,0 +1,33 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>LicensePermssion</PageTitle>
+
+<div class="page">
+    <AuthorizeView>
+        
+        <Authorized>
+            <div class="sidebar">
+                <NavMenu/>
+            </div>
+        </Authorized>
+
+    </AuthorizeView>
+    
+    <main>
+        <AuthorizeView>
+            <Authorized>
+                <div class="top-row px-4" style="background-color: blueviolet;">
+                    <LoginDisplay/>
+                </div>
+            </Authorized>
+            <NotAuthorized>
+                <div class="top-row px-4">
+                    <img src="~/Contents/logo.PNG" alt=""/>
+                </div>
+            </NotAuthorized>
+        </AuthorizeView>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>

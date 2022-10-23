@@ -1,0 +1,19 @@
+﻿@using LicensePermssion.StartupCoreModules.CoreAuthenticationService
+@inject NavigationManager _navigationManager;
+@inject AuthenticationStateProvider _authenticationStateProvider;
+
+<AuthorizeView>
+    <Authorized>
+        <RadzenButton ButtonStyle="ButtonStyle.Danger" Text="Logout"  Click="logoutAsync" />
+    </Authorized>
+
+</AuthorizeView>
+@code {
+    private async Task logoutAsync()
+    {
+        var customAuthProvider = (CustomAuthProvider) _authenticationStateProvider;
+        await customAuthProvider.UpdateAuthenticationStateAsync(null);
+        _navigationManager.NavigateTo("/Login",true);
+        
+    }
+}

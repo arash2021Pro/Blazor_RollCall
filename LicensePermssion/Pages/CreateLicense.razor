@@ -1,0 +1,59 @@
+﻿@page "/CreateLicense"
+@using LicensePermssion.Models
+@attribute [Authorize(Roles = "admin")]
+@inherits LicensePermssion.Components.CreateLicenseComponent
+
+<div class="container my-4">
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <RadzenTemplateForm TItem="CreateLicenseModel" Data="_createLicenseModel" Submit="@HandleCreateLicense">
+                <p>
+                    <RadzenCard>
+                        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">Default TextBox</RadzenText>
+                        <RadzenTextBox @bind-Value="_createLicenseModel.LicenseType"  Class="w-100" />
+                    </RadzenCard>
+                </p>
+                <p><RadzenCard>
+                                       <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">AppSerialCount</RadzenText>
+                                       <RadzenNumeric TValue="int" @bind-Value="@_createLicenseModel.AppSerialCount" Class="w-100"/>
+                                   </RadzenCard></p>
+                
+                <p>
+                      <RadzenCard>
+                                        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">ClientCount</RadzenText>
+                                        <RadzenNumeric TValue="int" @bind-Value="@_createLicenseModel.ClientCount" Class="w-100"/>
+                                    </RadzenCard>
+                </p>
+              
+                
+                <p>
+                      <RadzenCard>
+                                        <RadzenCheckBox @bind-Value="_createLicenseModel.IsMobileVersionActive" Name="MobileVersion" TValue="bool"/>
+                                        <RadzenLabel Text="MobileVersion" Component="MobileVersion" Style="margin-left: 8px; vertical-align: middle;"/>
+                                    </RadzenCard>
+                </p>
+              
+                <p> <RadzenCard>
+                                       <RadzenCheckBox @bind-Value="_createLicenseModel.IsSmsPanelActive"  Name="SmsVersion" TValue="bool" />
+                                       <RadzenLabel Text="SmsVersion" Component="SmsVersion" Style="margin-left: 8px; vertical-align: middle;" />
+                                   </RadzenCard></p>
+               
+                
+                <div class="col-lg-3 offset-md-5">
+                    <RadzenButton ButtonType="ButtonType.Submit" Text="Login" ButtonStyle="ButtonStyle.Primary"/>
+                </div>
+            </RadzenTemplateForm>
+        </div>
+    </div>
+</div>
+
+@code {
+    private CreateLicenseModel _createLicenseModel = new ();
+
+    private async Task HandleCreateLicense()
+    {
+        await RegisterLicenseAsync(_createLicenseModel);
+    }
+}

@@ -1,0 +1,17 @@
+C:\Users\admin\RiderProjects\Permission\CoreStorage\bin\Debug\net6.0\CoreStorage.deps.json
+C:\Users\admin\RiderProjects\Permission\CoreStorage\bin\Debug\net6.0\CoreStorage.runtimeconfig.json
+C:\Users\admin\RiderProjects\Permission\CoreStorage\bin\Debug\net6.0\CoreStorage.dll
+C:\Users\admin\RiderProjects\Permission\CoreStorage\bin\Debug\net6.0\CoreStorage.pdb
+C:\Users\admin\RiderProjects\Permission\CoreStorage\bin\Debug\net6.0\CoreBussiness.dll
+C:\Users\admin\RiderProjects\Permission\CoreStorage\bin\Debug\net6.0\CoreBussiness.pdb
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\CoreStorage.csproj.AssemblyReference.cache
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\CoreStorage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\CoreStorage.AssemblyInfoInputs.cache
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\CoreStorage.AssemblyInfo.cs
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\CoreStorage.csproj.CoreCompileInputs.cache
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\CoreStorage.csproj.CopyComplete
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\CoreStorage.dll
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\refint\CoreStorage.dll
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\CoreStorage.pdb
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\CoreStorage.genruntimeconfig.cache
+C:\Users\admin\RiderProjects\Permission\CoreStorage\obj\Debug\net6.0\ref\CoreStorage.dll
